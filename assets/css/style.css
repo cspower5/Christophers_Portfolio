@@ -1,5 +1,97 @@
+:root{
+    --body-color: rgb(254, 234, 204);
+    --section-color: rgb(212, 52, 30);
+    --font-color: rgb(238, 232, 124);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--body-color);
+  }
+/* Start Header styles */
+header {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+    background-color: var(--section-color);
+    height: 150px;
+    display: flex;
+  }
+  header section {
+      flex 1;
+  }
+  header h1 {
+    flex: 1 1 10%;
+    /*display: inline-block;*/
+    font-size: 2.5em;
+    color: var(--font-color);
+    justify-content: flex-start;
+}
+ /* Start Nav styles */
+  nav {
+    flex: 0 0 50%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+  nav section ul {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    list-style-type: none;
+  }
+  nav section ul li {
+    flex: 0 0 25%;
+    color: var(--font-color);
+    font-size: 20px; 
+    margin-top: 1.5em;
+    text-align: center;
+}
+ /* Start Hero styles */
+ .hero figure{
+    height: 10em;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Me-and-Poseidon.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.hero div {
+    margin: auto;
+    padding: 1em;
+    color: var(--font-color);
+    font-size: 1.5em;
+    background-color: var(--section-color);
+    display: inline-block;
+    float: right;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */   
+@media screen and (max-width: 768) {
+    header h1 {
+        flex: 0 0 100%;
+        display: inline-block;
+        font-size: 48px;
+        color: var(--font-color);
+      }
+     /* Start Nav styles */
+      nav {
+        flex: 0 0 100%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    }
+}
+@media screen and (max-width: 575px) {
+    header h1 {
+        flex: 0 0 100%;
+        display: inline-block;
+        font-size: 48px;
+        color: var(--font-color);
+      }
+     /* Start Nav styles */
+      nav {
+        flex: 0 0 100%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    }
+}
+ /* End Media styles */
