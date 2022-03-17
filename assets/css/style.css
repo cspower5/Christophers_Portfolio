@@ -67,6 +67,11 @@ header {
     display: inline-block;
     /*float: right;*/
 }
+/*Start main styles*/
+img {
+    height: 200px;
+    width: 200px;
+}
 /* Start Footer Styles */
 footer {
     background: var(--section-color);
