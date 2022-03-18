@@ -40,19 +40,17 @@ nav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   
 }
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
 nav ul li {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: space-around;
+  margin-left: 20px;
 }
 nav ul li a {
   color: var(--font-color);
   font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 /* Start Hero styles */
 .hero figure {
@@ -101,34 +99,34 @@ email a:hover {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   header div h1 {
-    flex: auto;
-    font-size: 40px;
+    font-size: 37px;
     color: var(--font-color);
   }
-  nav {
-    flex: auto;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
   nav ul li {
+      flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 10px;
+  }
+  nav ul li a {
+    color: var(--font-color);
     font-size: 15px;
   }
 }
 /* MEDIA QUERY FOR PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  header {
+    flex-wrap: wrap;
+}
   header section h1 {
-    flex: auto;
     font-size: 36px;
     color: var(--font-color);
-  }
-  nav {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 }
   nav ul li {
-    font-size: 1000px;
+    list-style-type: none;
+    margin-left: 5px;
+}
+  nav ul li a {
+    color: var(--font-color);
+    font-size: 15px;
   }
 }
