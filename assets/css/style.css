@@ -1,126 +1,134 @@
-:root{
-    --body-color: rgb(254, 234, 204);
-    --section-color: rgb(212, 52, 30);
-    --font-color: rgb(238, 232, 124);
-    --hover-color: rgb(7, 9, 1);
+:root {
+  --body-color: rgb(254, 234, 204);
+  --section-color: rgb(212, 52, 30);
+  --font-color: rgb(238, 232, 124);
+  --hover-color: rgb(7, 9, 1);
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--body-color);
-  }
+  background-color: var(--body-color);
+}
 /* Start Header styles */
 header {
-    padding: 20px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
-    background-color: var(--section-color);
-    height: 150px;
-    display: flex;
-  }
-  header section {
-      flex 1;
-  }
-  header h1 {
-    flex: auto;
-    /*display: inline-block*/
-    font-size: 48px;
-    color: var(--font-color);
-    justify-content: flex-start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--section-color);
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
- /* Start Nav styles */
-  nav {
-    flex: 0 0 50%;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+header section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-  nav section ul {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    list-style-type: none;
-  }
-  nav section ul li {
-    flex: 0 0 25%;
-    color: var(--font-color);
-    font-size: 20px; 
-    margin-top: 1.5em;
-    text-align: center;
+header section h1 {
+  font-size: 48px;
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- /* Start Hero styles */
- .hero figure{
-    height: 10em;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/Me-and-Poseidon.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
+/*Start Navigation styles*/
+nav {
+  color: var(--font-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+}
+nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul li a {
+  color: var(--font-color);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Start Hero styles */
+.hero figure {
+  height: 10em;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/Me-and-Poseidon.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 .hero div {
-    margin: auto;
-    padding: 1em;
-    color: var(--font-color);
-    font-size: 1.5em;
-    background-color: var(--section-color);
-    display: inline-block;
-    /*float: right;*/
+  margin: auto;
+  padding: 1em;
+  color: var(--font-color);
+  font-size: 1.5em;
+  background-color: var(--section-color);
+  display: inline-block;
+  /*float: right;*/
 }
 /*Start main styles*/
 img {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
 }
 /* Start Footer Styles */
 footer {
-    background: var(--section-color);
-    color: var(--font-color);
+  background: var(--section-color);
+  color: var(--font-color);
 }
 footer section {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
 }
 footer section div {
-    margin: 2em;
+  margin: 2em;
 }
-footer phone:hover, email:hover, email a:hover {
-    color: var(--hover-color);
-    border-style:dashed;
+footer phone:hover,
+email:hover,
+email a:hover {
+  color: var(--hover-color);
+  border-style: dashed;
 }
-/* MEDIA QUERY FOR TABLETS AND SMALLER */   
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    header h1 {
-        flex: auto;
-        /*display: inline-block;*/
-        font-size: 40px;
-        color: var(--font-color);
-      }
-     /* Start Nav styles */
-      nav {
-        flex: auto;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    }
-    nav ul li {
-        font-size: 15px;
-    }
+  header div h1 {
+    flex: auto;
+    font-size: 40px;
+    color: var(--font-color);
+  }
+  nav {
+    flex: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  nav ul li {
+    font-size: 15px;
+  }
 }
+/* MEDIA QUERY FOR PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    header h1 {
-        flex: auto;
-        /*display: inline-block;*/
-        font-size: 36px;
-        color: var(--font-color);
-      }
-     /* Start Nav styles */
-    nav {
-        flex: auto;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        flex-direction: column;
-    }
-    nav ul li {
-        font-size: 1000px;
-    }
+  header section h1 {
+    flex: auto;
+    font-size: 36px;
+    color: var(--font-color);
+  }
+  nav {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+  nav ul li {
+    font-size: 1000px;
+  }
 }
