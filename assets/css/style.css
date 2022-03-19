@@ -12,102 +12,117 @@
 body {
   background-color: var(--body-color);
 }
+h1, h2, h3, h4 {
+    color: var(--font-color);
+    background-color: var(--section-color);
+}
 /* Start Header styles */
 header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: var(--section-color);
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
-header section {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-header section h1 {
-  font-size: 48px;
-  color: var(--font-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header h1 {
+    font-size: 48px;
 }
 /*Start Navigation styles*/
 nav {
   color: var(--font-color);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-nav ul {
   display: flex;
   justify-content: space-around;
+  width: 50%;
+  /* margin-left: 250px; */
 }
-nav ul li {
-  list-style-type: none;
-  margin: 0 5px 0 20px;
-}
-nav ul li a {
-  color: var(--font-color);
-  font-size: 20px;
+nav a {
+    color: var(--font-color);
+    font-size: 20px;
 }
 /* Start Hero styles */
-.hero section {
-    margin: auto;
-    padding: 1em;
-  }
-.hero_img{
-  height: 200px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../images/Me-and-Poseidon.jpeg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
+.hero {
+    height: 400px;
+    background-image: url("../images/Me-and-Poseidon.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .subtitle {
-  height: 2%;
-  width: 30%;
-  color: var(--font-color);
-  font-size: 1.5em;
-  background-color: var(--section-color);
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
+    margin: 0 2em 2em 0;
+  }
+.subtitle h2 {
+        padding: 1em 4em 1em 4em;
 }
+
 /*Start main styles*/
-img {
-  height: 200px;
-  width: 200px;
+.about-me {
+    background-color: var(--section-color);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 3em;
+    /* border-right: 10px solid var(--hover-color); */
+
 }
 .about-me h3 {
     border-right: 10px solid var(--hover-color);
-    height: 60px;
-    color: var(--font-color);
-    float:left;
+    margin-right: 20px;
+    padding-right: 20px;
+    width: 30%;
 }
 p {
     color: var(--font-color);
-    padding-right: 10px;
+    padding: 0 5em 0 0em;
+    margin-bottom: 10em;
+    /* border-left: 10px solid var(--hover-color); */
 }
-.about-me {
-    background-color: var(--section-color);
+.work-section {
+    display: flex;
 }
-.work {
-  
-}
-.work h3 {
+.work-section h3 {
     border-right: 10px solid var(--hover-color);
-    height: 68.5em;
-    color: var(--hover-color);
-    float:left;
+    margin-right: 20px;
+    padding-right: 20px;
+    width: 21%;
 }
-h4 {
-    color: var(--hover-color);
+.flexing {
+    display: flex;
+    flex-direction: column;
+}
+.flex-work {
+    width: 500px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+.flex-work h4 {
+    background: white;
+    
+}
+.surf-report {
+    background-image: url("../images/Sea-gull-flying.jpeg");
+}
+.led-wall {
+    background-image: url("../images/Prince-Island-men-at-coffee-shop.jpeg");
+}
+.calculator {
+    background-image: url("../images/sculpture-of-Greek-torso.jpeg");  
+}
+.pastel-puz {
+    background-image: url("../images/Flower-from-Greece.jpeg");
+}
+.run-buddy {
+    background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
 }
 
 /* Start Footer Styles */
@@ -115,61 +130,66 @@ footer {
     background: var(--section-color);
     color: var(--font-color);
   }
-  footer section {
+footer section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
-  footer section div {
+footer section div {
     margin: 2em;
   }
-  footer phone:hover,
-  email:hover,
-  email a:hover {
+footer .phone:hover,
+  address:hover,
+  address a:hover {
     color: var(--hover-color);
     border-style: dashed;
   }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  header section h1 {
-    font-size: 37px;
-    color: var(--font-color);
+/* /* @media screen and (max-width: 768px) { */
+  header h1 {
+    font-size: 30px;
+    width: 30%;
   }
-  nav ul li {
-    list-style-type: none;
-    margin-left: 10px;
+  nav {
+    /* list-style-type: none; */
+    /* margin-left: 10px; */
+    width: 50%;
   }
-  nav ul li a {
-    color: var(--font-color);
+  nav a { 
     font-size: 15px;
   }
-  .hero figure {
-    height: 150px;
-  }
   .subtitle {
-      top: 18%;
-      left: 60%;
-      font-size: 1.25em;
-  }
+    margin: 0 3em 3em 0;
 }
+.subtitle h2 {
+    padding: 1em 2em 1em 2em;
+}
+  
+} */
 
 /* MEDIA QUERY FOR PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+/* /* @media screen and (max-width: 575px) { */
   header {
     flex-wrap: wrap;
   }
-  header section h1 {
-    font-size: 36px;
-    color: var(--font-color);
-  }
-  .hero figure {
+  header h1 {
+    font-size: 25px;
+    width: 50%;
+}
+.subtitle {
+    margin: 0 4em 3em 0;
+}
+.subtitle h2 {
+    padding: 1em 2em 1em 2em;
+}
+  /* .hero figure {
     height: 100px;
-  }
-  .subtitle {
+  } */
+  /* .subtitle {
       top: 15%;
       left: 60%;
       font-size: 1em;
-  }
-}
+  } */
+} */
