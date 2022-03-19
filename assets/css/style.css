@@ -17,7 +17,7 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: var(--section-color);
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,23 +38,26 @@ header section h1 {
 nav {
   color: var(--font-color);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  
 }
 nav ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
 }
 nav ul li {
   list-style-type: none;
-  margin-left: 20px;
+  margin: 0 5px 0 20px;
 }
 nav ul li a {
   color: var(--font-color);
   font-size: 20px;
 }
 /* Start Hero styles */
-.hero figure {
-  height: 10em;
+.hero section {
+    margin: auto;
+    padding: 1em;
+  }
+.hero_img{
+  height: 200px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url("../images/Me-and-Poseidon.jpeg");
@@ -62,15 +65,19 @@ nav ul li a {
   background-position: center;
   display: flex;
 }
-.hero div {
-  margin: auto;
-  padding: 1em;
+.subtitle {
+  height: 1%;
+  width: 30%;
   color: var(--font-color);
   font-size: 1.5em;
   background-color: var(--section-color);
-  display: inline-block;
-  /*float: right;*/
-}
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;}
 /*Start main styles*/
 img {
   height: 200px;
@@ -96,14 +103,34 @@ email a:hover {
   color: var(--hover-color);
   border-style: dashed;
 }
+h3 {
+    border-right: 10px solid var(--hover-color);
+    height: 60px;
+    color: var(--font-color);
+}
+p {
+    position: relative;
+    left: 80px;
+    top: -60px;
+    color: var(--font-color);
+    padding-right: 10px;
+}
+p, h3 {
+    display: inline-block;
+}
+.about-me {
+    background-color: var(--section-color);
+}
+.work h3 {
+    color: var(--section-color);
+}
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  header div h1 {
+  header section h1 {
     font-size: 37px;
     color: var(--font-color);
   }
   nav ul li {
-      flex-wrap: wrap;
     list-style-type: none;
     margin-left: 10px;
   }
@@ -111,22 +138,31 @@ email a:hover {
     color: var(--font-color);
     font-size: 15px;
   }
+  .hero figure {
+    height: 150px;
+  }
+  .subtitle {
+      top: 18%;
+      left: 60%;
+      font-size: 1.25em;
+  }
+
 }
 /* MEDIA QUERY FOR PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   header {
     flex-wrap: wrap;
-}
+  }
   header section h1 {
     font-size: 36px;
     color: var(--font-color);
-}
-  nav ul li {
-    list-style-type: none;
-    margin-left: 5px;
-}
-  nav ul li a {
-    color: var(--font-color);
-    font-size: 15px;
+  }
+  .hero figure {
+    height: 100px;
+  }
+  .subtitle {
+      top: 15%;
+      left: 60%;
+      font-size: 1em;
   }
 }
