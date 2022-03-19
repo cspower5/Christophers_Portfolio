@@ -68,11 +68,9 @@ nav a {
     justify-content: right;
     align-items: center;
     margin-bottom: 3em;
-    /* border-right: 10px solid var(--hover-color); */
-
 }
 .about-me h3 {
-    border-right: 10px solid var(--hover-color);
+    border: 10px solid var(--hover-color);
     margin-right: 20px;
     padding-right: 20px;
     width: 30%;
