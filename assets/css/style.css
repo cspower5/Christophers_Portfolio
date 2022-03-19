@@ -66,7 +66,7 @@ nav ul li a {
   display: flex;
 }
 .subtitle {
-  height: 1%;
+  height: 2%;
   width: 30%;
   color: var(--font-color);
   font-size: 1.5em;
@@ -77,53 +77,60 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;}
+  padding: 15px;
+}
 /*Start main styles*/
 img {
   height: 200px;
   width: 200px;
 }
-/* Start Footer Styles */
-footer {
-  background: var(--section-color);
-  color: var(--font-color);
-}
-footer section {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-}
-footer section div {
-  margin: 2em;
-}
-footer phone:hover,
-email:hover,
-email a:hover {
-  color: var(--hover-color);
-  border-style: dashed;
-}
-h3 {
+.about-me h3 {
     border-right: 10px solid var(--hover-color);
     height: 60px;
     color: var(--font-color);
+    float:left;
 }
 p {
-    position: relative;
-    left: 80px;
-    top: -60px;
     color: var(--font-color);
     padding-right: 10px;
-}
-p, h3 {
-    display: inline-block;
 }
 .about-me {
     background-color: var(--section-color);
 }
-.work h3 {
-    color: var(--section-color);
+.work {
+  
 }
+.work h3 {
+    border-right: 10px solid var(--hover-color);
+    height: 68.5em;
+    color: var(--hover-color);
+    float:left;
+}
+h4 {
+    color: var(--hover-color);
+}
+
+/* Start Footer Styles */
+footer {
+    background: var(--section-color);
+    color: var(--font-color);
+  }
+  footer section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer section div {
+    margin: 2em;
+  }
+  footer phone:hover,
+  email:hover,
+  email a:hover {
+    color: var(--hover-color);
+    border-style: dashed;
+  }
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   header section h1 {
@@ -146,8 +153,8 @@ p, h3 {
       left: 60%;
       font-size: 1.25em;
   }
-
 }
+
 /* MEDIA QUERY FOR PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   header {
