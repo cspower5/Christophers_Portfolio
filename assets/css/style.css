@@ -126,7 +126,7 @@ nav a {
 }
 .flexing {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
 }
 /* rule for Sea Gull Image */
@@ -181,6 +181,10 @@ nav a {
 }
 .run-buddy {
     background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
+}
+ #work a {
+    width: 400px;
+    z-index: 999;
 }
 /* Start Footer Styles */
 footer a {
