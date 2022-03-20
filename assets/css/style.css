@@ -159,44 +159,23 @@ nav a {
     background: var(--section-color);
     padding: 20px;
 }
+.flex-work div {
+    width: 100%;
+}
 .surf-report {
     background-image: url("../images/Sea-gull-flying.jpeg");
 }
 .led-wall {
     background-image: url("../images/Prince-Island-men-at-coffee-shop.jpeg");
-    position: relative;
-    width: 48%;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1% 1% 0 1%;
 }
 .calculator {
     background-image: url("../images/sculpture-of-Greek-torso.jpeg"); 
-    position: relative;
-    width: 48%;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1% 1% 0 1%; 
 }
 .pastel-puz {
     background-image: url("../images/Flower-from-Greece.jpeg");
-    position: relative;
-    width: 48%;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1% 1% 0 1%;
 }
 .run-buddy {
     background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
-    position: relative;
-    width: 48%;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1% 1% 0 1%;
 }
 /* Start Footer Styles */
 footer a {
