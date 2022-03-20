@@ -97,12 +97,14 @@ nav a {
     width: 100%;
     display: flex;
 }
+/* Rule for the about me title section*/
 .section-title-am {
     min-width: 140px;
     text-align: center;
     background-color: var(--section-color);
     border-right: 8px solid var(--hover-color);
 }
+/* Rule for the work title section*/
 .section-title-wk {
     min-width: 140px;
     text-align: center;
@@ -112,11 +114,15 @@ nav a {
     margin-top: 1%;
     border-bottom: 1px solid var(--hover-color);
 }
+/* Rule for the contact me title section*/
 .section-title-cm {
     min-width: 140px;
     text-align: center;
+    background-color: var(--section-color);
     border-right: 8px solid var(--hover-color);
     border-top: 1px solid var(--hover-color);
+    margin-top: 1%;
+    border-bottom: 1px solid var(--hover-color);
 }
 .flexing {
     width: 100%;
@@ -176,18 +182,40 @@ nav a {
 .run-buddy {
     background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
 }
-
 /* Start Footer Styles */
-.contact-me .flexing {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
+.foot-flex{
+    /* display: flex; */
+    width: 100%;
+    justify-content: space-between;
 }
-.phone:hover, address a:hover {
+.foot-flex div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1% 1% 5% 1%;
+    padding: 10%;
+
+}
+.foot-summary {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-style: oblique;
+    width: 100%;
+    margin-top: 2%;
+}
+a:hover {
     color: var(--hover-color);
     border: 10px double;
   }
+.contact-me-links {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-style: oblique;
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
