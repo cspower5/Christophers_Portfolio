@@ -96,8 +96,9 @@ p {
 }
 .flexing {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: 30px;
 }
 .flex-work {
     width: 500px;
@@ -114,7 +115,8 @@ p {
     
 }
 .surf-report {
-    /* width: 500px; */
+    width: 1000px;
+    height: 700px;
     background-image: url("../images/Sea-gull-flying.jpeg");
 }
 .led-wall {
