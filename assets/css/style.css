@@ -41,9 +41,6 @@ header {
   padding: 20px;
   border-bottom: 1px solid var(--hover-color);
 }
-/* header h1 {
-    font-size: 4em;
-} */
 /*Start Navigation styles*/
 nav {
   color: var(--font-color);
@@ -126,7 +123,7 @@ nav a {
 }
 .flexing {
     width: 100%;
-    /* display: flex; */
+    display: flex;
     flex-wrap: wrap;
 }
 /* rule for Sea Gull Image */
@@ -158,6 +155,16 @@ nav a {
     margin-left: 3%;
     text-align: center;
 }
+.image-caption2 {
+    position: absolute;
+    width: 30%;
+    padding: 5px;
+    background-color: var(--section-color);
+    bottom: 15%;
+    border: 1px solid var(--hover-color);
+    margin-left: 3%;
+    text-align: center;
+}
 .flex-work-sg .image-caption {
     width: 15%;
     padding: 20px;
@@ -172,21 +179,41 @@ nav a {
 }
 .led-wall {
     background-image: url("../images/Prince-Island-men-at-coffee-shop.jpeg");
+    position: relative;
+    width: 48%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 1% 0 1%;
 }
 .calculator {
-    background-image: url("../images/sculpture-of-Greek-torso.jpeg");  
+    background-image: url("../images/sculpture-of-Greek-torso.jpeg"); 
+    position: relative;
+    width: 48%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 1% 0 1%; 
 }
 .pastel-puz {
     background-image: url("../images/Flower-from-Greece.jpeg");
+    position: relative;
+    width: 48%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 1% 0 1%;
 }
 .run-buddy {
     background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
+    position: relative;
+    width: 48%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 1% 0 1%;
 }
- #work a {
-    width: 400px;
-    z-index: 999;
-}
-/* Start Footer Styles */
+ /* Start Footer Styles */
 footer a {
     color: var(--font-color);
 }
@@ -211,7 +238,7 @@ footer a {
     width: 100%;
     margin-top: 2%;
 }
-a:hover {
+footer a:hover {
     color: var(--hover-color);
     border: 10px double;
   }
@@ -249,7 +276,7 @@ a:hover {
     min-width: 100px;
 }
   
-} */
+}
 
 /* MEDIA QUERY FOR PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
