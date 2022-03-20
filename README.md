@@ -19,6 +19,6 @@ Criteria:
 github link to the final version of code.
 This site was built using [GitHub Pages](https://github.com/cspower5/Christophers_Portfolio).
 
-![This is an image](/Users/cspower/Documents/Bootcamp/Christophers_Portfolio/assets/images/Chris-portfolio-Screen-Shot.png)
+![This is an image](https://github.com/cspower5/Christophers_Portfolio/blob/develop/portfolio/assets/images/Chris-portfolio-Screen-Shot.png)
 
 
