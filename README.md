@@ -17,4 +17,8 @@ Criteria:
 9. The site is responsive to fit nicely on any size divice.
 
 github link to the final version of code.
-https://github.com/cspower5/Christophers_Portfolio
+This site was built using [GitHub Pages](https://github.com/cspower5/Christophers_Portfolio).
+
+![Chris Portfolio Screen Shot](https://myoctocat.com/Users/cspower/Documents/Bootcamp/Christophers_Portfolio/assets/images/Chris-portfolio-Screen-Shot.png)
+
+

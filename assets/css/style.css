@@ -48,7 +48,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
-  /* margin-left: 250px; */
 }
 nav a {
     color: var(--font-color);
@@ -145,6 +144,7 @@ nav a {
     background-size: cover;
     margin: 1% 1% 0 1%;
 }
+/* Styles for the caption of each photo */
 .image-caption {
     position: absolute;
     width: 30%;
@@ -155,13 +155,16 @@ nav a {
     margin-left: 3%;
     text-align: center;
 }
+/* Start the placement of the images */
 .flex-work h4 {
     background: var(--section-color);
     padding: 20px;
 }
+/* Giving the image inside the div container width */
 .flex-work div {
     width: 100%;
 }
+/* Each image's url */
 .surf-report {
     background-image: url("../images/Sea-gull-flying.jpeg");
 }
