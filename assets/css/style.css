@@ -155,24 +155,9 @@ nav a {
     margin-left: 3%;
     text-align: center;
 }
-.image-caption2 {
-    position: absolute;
-    width: 30%;
-    padding: 5px;
-    background-color: var(--section-color);
-    bottom: 15%;
-    border: 1px solid var(--hover-color);
-    margin-left: 3%;
-    text-align: center;
-}
-.flex-work-sg .image-caption {
-    width: 15%;
-    padding: 20px;
-}
 .flex-work h4 {
     background: var(--section-color);
     padding: 20px;
-    
 }
 .surf-report {
     background-image: url("../images/Sea-gull-flying.jpeg");
@@ -213,7 +198,7 @@ nav a {
     background-size: cover;
     margin: 1% 1% 0 1%;
 }
- /* Start Footer Styles */
+/* Start Footer Styles */
 footer a {
     color: var(--font-color);
 }
