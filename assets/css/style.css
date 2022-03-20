@@ -15,20 +15,20 @@ body {
 h1, h2, h3, h4 {
     color: var(--font-color);
     background-color: var(--section-color);
+    font-style: oblique;
 }
 /* Start Header styles */
 header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: var(--section-color);
-  /* height: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 header h1 {
-    font-size: 48px;
+    font-size: 55px;
 }
 /*Start Navigation styles*/
 nav {
@@ -65,15 +65,16 @@ nav a {
 .about-me {
     background-color: var(--section-color);
     display: flex;
-    justify-content: right;
-    align-items: center;
     margin-bottom: 3em;
 }
 .about-me h3 {
     border: 10px solid var(--hover-color);
     margin-right: 20px;
     padding-right: 20px;
+    padding-top: 40px;
     width: 30%;
+    text-align: center;
+    font-size: 3em;
 }
 p {
     color: var(--font-color);
@@ -85,14 +86,18 @@ p {
     display: flex;
 }
 .work-section h3 {
-    border-right: 10px solid var(--hover-color);
+    border: 10px solid var(--hover-color);
     margin-right: 20px;
     padding-right: 20px;
     width: 21%;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3em;
 }
 .flexing {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 .flex-work {
     width: 500px;
@@ -101,13 +106,15 @@ p {
     background-size: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;  
+    align-items: center;
 }
 .flex-work h4 {
-    background: white;
+    background: var(--section-color);
+    padding: 20px;
     
 }
 .surf-report {
+    /* width: 500px; */
     background-image: url("../images/Sea-gull-flying.jpeg");
 }
 .led-wall {
@@ -137,15 +144,13 @@ footer section {
 footer section div {
     margin: 2em;
   }
-footer .phone:hover,
-  address:hover,
-  address a:hover {
+.phone:hover, address a:hover {
     color: var(--hover-color);
-    border-style: dashed;
+    border: 10px double;
   }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-/* /* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 768px) {
   header h1 {
     font-size: 30px;
     width: 30%;
@@ -168,7 +173,7 @@ footer .phone:hover,
 } */
 
 /* MEDIA QUERY FOR PHONES AND SMALLER */
-/* /* @media screen and (max-width: 575px) { */
+@media screen and (max-width: 575px) {
   header {
     flex-wrap: wrap;
   }
