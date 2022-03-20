@@ -62,13 +62,18 @@ nav a {
 }
 
 /*Start main styles*/
+/* main {
+    max-width: 100%;
+    background-image: cover;
+}  */
 .about-me {
     background-color: var(--section-color);
     display: flex;
     margin-bottom: 3em;
 }
 .about-me h3 {
-    border: 10px solid var(--hover-color);
+    border-right: 10px solid var(--hover-color);
+    border-top: 10px solid var(--hover-color);
     margin-right: 20px;
     padding-right: 20px;
     padding-top: 40px;
@@ -80,13 +85,19 @@ p {
     color: var(--font-color);
     padding: 0 5em 0 0em;
     margin-bottom: 10em;
-    /* border-left: 10px solid var(--hover-color); */
 }
 .work-section {
+    background-size: cover;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 1000px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
-.work-section h3 {
-    border: 10px solid var(--hover-color);
+.work-title {
+    border-right: 10px solid var(--hover-color);
+    border-top: 10px solid var(--hover-color);
     margin-right: 20px;
     padding-right: 20px;
     width: 21%;
@@ -94,12 +105,23 @@ p {
     padding-top: 100px;
     font-size: 3em;
 }
-.flexing {
+/* .work-section h3 {
+    border-right: 10px solid var(--hover-color);
+    border-top: 10px solid var(--hover-color);
+    margin-right: 20px;
+    padding-right: 20px;
+    width: 21%;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3em;
+} */
+/* .flexing {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
     margin-left: 30px;
-}
+    margin-bottom: 30px;
+} */
 .flex-work {
     width: 500px;
     height: 350px;
@@ -115,9 +137,9 @@ p {
     
 }
 .surf-report {
-    width: 1000px;
-    height: 700px;
     background-image: url("../images/Sea-gull-flying.jpeg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
 }
 .led-wall {
     background-image: url("../images/Prince-Island-men-at-coffee-shop.jpeg");
@@ -136,16 +158,28 @@ p {
 footer {
     background: var(--section-color);
     color: var(--font-color);
-  }
+    margin-top: 30px;
+}
 footer section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-  }
+}
 footer section div {
     margin: 2em;
   }
+  footer h3 {
+    border-right: 10px solid var(--hover-color);
+    border-top: 10px solid var(--hover-color);
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    width: 30%;
+    text-align: center;
+    font-size: 3em;
+  }
+  
 .phone:hover, address a:hover {
     color: var(--hover-color);
     border: 10px double;
