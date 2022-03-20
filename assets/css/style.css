@@ -195,7 +195,7 @@ footer a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 1% 1% 5% 1%;
+    margin: 1% 1% 0% 1%;
     padding: 10%;
 }
 .foot-summary {
@@ -237,6 +237,13 @@ a:hover {
 .subtitle h2 {
     padding: 1em 2em 1em 2em;
 }
+.section-title-wk {
+    min-width: 100px;
+}
+/* Rule for the contact me title section*/
+.section-title-cm {
+    min-width: 100px;
+}
   
 } */
 
@@ -255,4 +262,10 @@ a:hover {
 .subtitle h2 {
     padding: 1em 2em 1em 2em;
 }
-} */
+.section-title-wk {
+    min-width: 80px;
+}
+/* Rule for the contact me title section*/
+.section-title-cm {
+    min-width: 80px;
+}
