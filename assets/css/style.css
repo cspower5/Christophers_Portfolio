@@ -30,16 +30,22 @@ h4 {
     font-size: 1rem;
 }
 .about-me {
+    /* font-size: 1.5rem; */
+    width: 100%;
+    height: 100%;
+    /* border-right: 3px  solid black; */
+}
+.am-summary {
     font-size: 1.5rem;
     width: 100%;
     height: 100%;
-    border-right: 3px  solid black;
-}
-.summary {
-    font-size: .5rem;
-    width: 100%;
-    height: 100%;
     border-left: 3px solid black;
+    padding-left: 1%;
+}
+.row {
+    background-color: var(--section-color);
+    border-top: solid var(--hover-color);
+
 }
 
 /* Start Header styles */
@@ -75,7 +81,7 @@ nav a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    border-bottom: 1px solid var(--hover-color);
+    /* border-bottom: 1px solid var(--hover-color); */
 }
 .subtitle {
     margin: 0 1em 12em 0;
@@ -84,13 +90,13 @@ nav a {
         padding: 1em 4em 1em 4em;
 }
 /*Start main styles*/
-.summary {
+/* .summary {
     color: var(--font-color);
     background-color: var(--section-color);
     padding-left: 1%;
     font-size: 1.5em;
     font-style: oblique;
-}
+} */
 .work-title {
     border-right: 10px solid var(--hover-color);
     border-top: 10px solid var(--hover-color);
@@ -106,14 +112,14 @@ nav a {
     display: flex;
 }
 /* Rule for the about me title section*/
-.section-title-am {
+/* .section-title-am {
     min-width: 140px;
     text-align: center;
     background-color: var(--section-color);
     border-right: 8px solid var(--hover-color);
-}
+} */
 /* Rule for the work title section*/
-.section-title-wk {
+/* .section-title-wk {
     min-width: 140px;
     text-align: center;
     background-color: var(--section-color);
@@ -121,7 +127,7 @@ nav a {
     border-top: 1px solid var(--hover-color);
     margin-top: 1%;
     border-bottom: 1px solid var(--hover-color);
-}
+} */
 /* Rule for the contact me title section*/
 .section-title-cm {
     min-width: 140px;
@@ -168,10 +174,10 @@ Styles for the caption of each photo
     text-align: center;
 }
 /* Start the placement of the images */
-.flex-work h4 {
+/* .flex-work h4 {
     background: var(--section-color);
     padding: 20px;
-}
+} */
 /* Giving the image inside the div container width */
 .flex-work div {
     width: 100%;
@@ -230,7 +236,7 @@ footer a:hover {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   h1 {
     font-size: 3em;
     width: 30%;
@@ -255,10 +261,10 @@ footer a:hover {
     min-width: 100px;
 }
   
-}
+} */
 
 /* MEDIA QUERY FOR PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   header {
     flex-wrap: wrap;
   }
@@ -278,4 +284,4 @@ footer a:hover {
 /* Rule for the contact me title section*/
 .section-title-cm {
     min-width: 80px;
-}
+} */
