@@ -1,0 +1,271 @@
+:root {
+  --body-color: rgb(254, 234, 204);
+  --section-color: rgb(212, 52, 30);
+  --font-color: rgb(238, 232, 124);
+  --hover-color: rgb(7, 9, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-color);
+}
+h1, h2, h3, h4 {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    font-style: oblique;
+}
+h1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 1.75em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1em;
+}
+
+/* Start Header styles */
+header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--section-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--hover-color);
+}
+/*Start Navigation styles*/
+nav {
+  color: var(--font-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+nav a {
+    color: var(--font-color);
+    font-size: 20px;
+}
+/* Start Hero styles */
+.hero {
+    height: 400px;
+    background-image: url("../images/Me-and-Poseidon.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--hover-color);
+}
+.subtitle {
+    margin: 0 1em 12em 0;
+  }
+.subtitle h2 {
+        padding: 1em 4em 1em 4em;
+}
+/*Start main styles*/
+.summary {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-style: oblique;
+}
+.work-title {
+    border-right: 10px solid var(--hover-color);
+    border-top: 10px solid var(--hover-color);
+    margin-right: 20px;
+    padding-right: 20px;
+    width: 21%;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3em;
+}
+.all-sections {
+    width: 100%;
+    display: flex;
+}
+/* Rule for the about me title section*/
+.section-title-am {
+    min-width: 140px;
+    text-align: center;
+    background-color: var(--section-color);
+    border-right: 8px solid var(--hover-color);
+}
+/* Rule for the work title section*/
+.section-title-wk {
+    min-width: 140px;
+    text-align: center;
+    background-color: var(--section-color);
+    border-right: 8px solid var(--hover-color);
+    border-top: 1px solid var(--hover-color);
+    margin-top: 1%;
+    border-bottom: 1px solid var(--hover-color);
+}
+/* Rule for the contact me title section*/
+.section-title-cm {
+    min-width: 140px;
+    text-align: center;
+    background-color: var(--section-color);
+    border-right: 8px solid var(--hover-color);
+    border-top: 1px solid var(--hover-color);
+    margin-top: 1%;
+    border-bottom: 1px solid var(--hover-color);
+}
+.flexing {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* rule for Sea Gull Image */
+.flex-work-sg {
+    position: relative;
+    width: 98%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 1%;
+}
+/*Rule for All other images */
+.flex-work {
+    position: relative;
+    width: 48%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 1% 0 1%;
+}
+/* Styles for the caption of each photo */
+.image-caption {
+    position: relative;
+    width: 30%;
+    padding: 5px;
+    background-color: var(--section-color);
+    bottom: 15%;
+    border: 1px solid var(--hover-color);
+    margin-left: 3%;
+    text-align: center;
+}
+/* Start the placement of the images */
+.flex-work h4 {
+    background: var(--section-color);
+    padding: 20px;
+}
+/* Giving the image inside the div container width */
+.flex-work div {
+    width: 100%;
+}
+/* Each image's url */
+.surf-report {
+   max-width: 100%;
+   padding-top: 40%;
+   background-image: url("../images/Trip_Consultant.png");
+}
+.led-wall {
+    background-image: url("../images/swappers_meet.png");
+}
+.calculator {
+    background-image: url("../images/A-Dish-A-Day.png"); 
+}
+.pastel-puz {
+    background-image: url("../images/Flower-from-Greece.jpeg");
+}
+.run-buddy {
+    background-image: url("../images/Santorini-church-with-blue-dome.jpeg");
+}
+/* Start Footer Styles */
+footer a {
+    color: var(--font-color);
+}
+.foot-flex{
+    /* display: flex; */
+    width: 100%;
+    justify-content: space-between;
+}
+.foot-flex div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1% 1% 0% 1%;
+    padding: 10%;
+}
+.foot-summary {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-style: oblique;
+    width: 100%;
+    margin-top: 2%;
+}
+footer a:hover {
+    color: var(--hover-color);
+    border: 10px double;
+  }
+.contact-me-links {
+    color: var(--font-color);
+    background-color: var(--section-color);
+    padding-left: 1%;
+    font-size: 1.5em;
+    font-style: oblique;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+    width: 30%;
+  }
+  nav {
+       width: 50%;
+  }
+  nav a { 
+    font-size: 15px;
+  }
+  .subtitle {
+    margin: 0 3em 3em 0;
+}
+.subtitle h2 {
+    padding: 1em 2em 1em 2em;
+}
+.section-title-wk {
+    min-width: 100px;
+}
+/* Rule for the contact me title section*/
+.section-title-cm {
+    min-width: 100px;
+}
+  
+}
+
+/* MEDIA QUERY FOR PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 2em;
+    width: 50%;
+}
+.subtitle {
+    margin: 0 4em 3em 0;
+}
+.subtitle h2 {
+    padding: 1em 2em 1em 2em;
+}
+.section-title-wk {
+    min-width: 80px;
+}
+/* Rule for the contact me title section*/
+.section-title-cm {
+    min-width: 80px;
+}
