@@ -18,6 +18,33 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.background-text {
+  white-space: pre-wrap;
+  font-family: Arial, sans-serif; /* Example with Arial */
+  width: 80%;
+  margin-left: auto; /* Pushes the element to the center from the left */
+  margin-right: auto; /* Pushes the element to the center from the right */
+  text-align: left; /* Aligns text to the left */
+  font-size: 16px;
+  color: #000000;
+}
+
+body {
+  background-color: #233349; /* A light gray background */
+}
+
+.portfolio-container {
+  border: 2px solid #070000; /* This adds a border around your main content */
+  background-color: #ffffff; /* This adds a light background color to the container */
+  padding: 20px; /* This adds some space between the border and your text */
+  border-radius: 10px; /* Adds rounded corners */
+  background-color: #8ea3bd; /* A very light gray background */
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
