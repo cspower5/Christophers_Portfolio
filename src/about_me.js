@@ -1,14 +1,37 @@
-export const myBackground = `
-A seasoned IT professional with extensive experience in database administration and inclusive knowledge of system administration principles and practices. 
-I work hard to stay current with new technologies. I'm now advancing my skills into Cloud Computing, Data Engineering, Python, JavaScript, and SQL. 
-I'm currently ennrolled in a 7 month Data Engineering course as I work toward an AWS Data Engineer Associate certification. 
-I'm a proven team player with a positive attitude, I'm always committed to meeting deadlines while staying calm under pressure. 
-I have a strong background in providing technical support and working on teams, I'm dedicated to bringing my problem-solving abilities and proven integrity to any role. 
-Throughout my career, I've developed a strong track record of providing exceptional technical support and delivering tailored solutions. 
-
-My experience includes:
-Database Administration: I have particular expertise in relational databases, particularly Sybase with training in MS SQL Server, Mysql, Postgresql, Mongodb, and Redshift datawarehouse.
-Automation: I have a proven ability to automate processes using shell scripting, Perl, and Python. I have built new database systems and upgraded existing ones, I have installed linux operating systems and windows clients on desktops.
-Full-Stack Development: I completed a comprehensive full-stack developer bootcamp, where I gained hands-on experience in JavaScript, and Node.js.  I have online training in Python, and I have also completed postgraduate coursework in Cloud computing to expand my expertise. 
-`;
-
+export const myBackground = {
+  intro: [
+    "A seasoned IT professional with extensive experience in database administration and a solid foundation in system administration principles.",
+    "I stay current with new technologies and I'm advancing my skills in Cloud Computing, Data Engineering, Python, JavaScript, and SQL.",
+    "I'm currently enrolled in a seven-month Data Engineering course while working toward an AWS Data Engineer Associate certification.",
+    "I'm a proven team player with a positive attitude — committed to meeting deadlines and staying calm under pressure. I bring strong problem-solving skills and integrity to every role."
+  ],
+  highlights: [
+    {
+      title: 'Database Administration',
+      text: 'Expertise in relational databases (Sybase) with experience/training in MS SQL Server, MySQL, PostgreSQL, MongoDB, and Redshift.'
+    },
+    {
+      title: 'Automation',
+      text: 'Automation using shell scripts, Perl, and Python; built and upgraded database systems and managed Linux/Windows deployments.'
+    },
+    {
+      title: 'Full-Stack & Cloud',
+      text: 'Completed a full-stack developer bootcamp (JavaScript, Node.js); additional Python and Cloud Computing coursework.'
+    }
+  ],
+  otherExperience: [
+    {
+      title: 'Refereeing',
+      text: '27 years as a basketball and football referee (MSHSL).'
+    },
+    {
+      title: 'Coaching',
+      text: '5 years coaching youth baseball.'
+    },
+    {
+      title: 'Community',
+      text: 'Member of the Cokato Lions Club.'
+    }
+  ]
+}
+ 

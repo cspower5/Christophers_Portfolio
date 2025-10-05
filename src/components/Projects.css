@@ -1,0 +1,6 @@
+.projects-section{padding:1rem}
+.projects-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr;gap:1rem}
+.project-item{display:flex;gap:1rem;align-items:flex-start}
+.project-thumb{width:120px;height:80px;object-fit:cover;border-radius:6px}
+.project-content h3{margin:0}
+.project-content p{margin:0.25rem 0}

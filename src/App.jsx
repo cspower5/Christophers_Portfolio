@@ -1,29 +1,43 @@
 import React from 'react';
 import './App.css'; 
-import profilePicture from './assets/images/Chris_professional_photo.jpg';
 import { myBackground } from './about_me.js'; // Import the text here
+import Projects from './components/Projects'
+import Header from './components/Header'
 
 function App() {
   const linkedInUrl = "https://www.linkedin.com/in/christopher-borer-24172823";
   const yourName = "Christopher Borer";
 
+
   return (
     <div className="portfolio-container">
-      <header>
-        <h1>{yourName}</h1>
-      </header>
+      <Header name={yourName} linkedIn={linkedInUrl} />
       
       <section className="profile-section">
-        <img 
-          src={profilePicture}
-          alt="A photo of Christopher"
-          className="profile-picture"
-        />
-        {/* Use the imported variable here */}
-        <p className="background-text">
-          {myBackground}
-        </p>
+        <div className="background-text">
+          {myBackground.intro.map((para, idx) => (
+            <p key={idx}>{para}</p>
+          ))}
+
+          <h4>Highlights</h4>
+          <ul className="highlights-list">
+            {myBackground.highlights.map(h => (
+              <li key={h.title}>
+                <strong>{h.title}:</strong> {h.text}
+              </li>
+            ))}
+          </ul>
+
+          <h4>Other experience</h4>
+          <ul className="other-experience-list">
+            {myBackground.otherExperience.map(e => (
+              <li key={e.title}><strong>{e.title}:</strong> {e.text}</li>
+            ))}
+          </ul>
+        </div>
       </section>
+
+      <Projects />
 
       <footer>
         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
