@@ -13,7 +13,7 @@ export default function Header({ name = 'Christopher Borer', linkedIn = 'https:/
           <p className="hero-role">Data Engineer · Full-Stack Developer</p>
 
           <div className="hero-ctas">
-            <a className="btn resume-btn" href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a className="btn resume-btn" href={`${import.meta.env.BASE_URL}ChristopherBorerResume.pdf`} target="_blank" rel="noopener noreferrer">Download Resume</a>
             <a className="btn linkedin-btn" href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
