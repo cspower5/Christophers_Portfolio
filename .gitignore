@@ -26,3 +26,6 @@ dist-ssr
 # Ignore Vite generated asset files
 /assets/index-*.js
 /assets/index-*.css
+
+# Temp folder marked for removal
+to_be_removed_assets/
